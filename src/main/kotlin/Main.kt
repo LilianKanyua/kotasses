@@ -2,6 +2,7 @@ fun main(){
     var result=string()
     println(result)
     arrays()
+    split()
     var stmt=join()
     println(stmt)
     var calculator=Calculator(200,756,789,46)
@@ -28,13 +29,15 @@ fun arrays() {
 }
 fun split(){
     var text="happy"
+    var split=text.split(' ')
+    println(split)
 
 }
-fun join():String{
-    var text1="Am "
-    var text2="here"
-    var full="$text1 $text2"
+fun join():String {
+    var text1 = arrayOf("am", "here", "now")
+    var full = "$text1[0] $text1[1]"
     return full
+    println(full.toString())
 }
 class Calculator(var num1:Int,var num2:Int, var num3:Int, var num4:Int){
    var sum=num2+num3
